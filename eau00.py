@@ -17,3 +17,12 @@ $>
 
 000 n’est pas là parce que cette combinaison ne comporte pas exclusivement des chiffres différents les uns des autres.
 """
+#Fonctions
+
+#Gestion d'erreurs
+
+#Parsing <=> Stockage entrée utilisateur
+
+#Resolution <=> Utilisation de la fonction
+
+#Affichage
