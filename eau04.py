@@ -13,3 +13,33 @@ $>
 Afficher -1 si le paramètre est négatif ou mauvais.
 
 """
+#Fonction 
+def Premier(a):
+    a = a + 1
+    i = 2
+    while i < a:
+        resultat = a % i
+        if resultat == 0:
+            a = a + 1
+        
+        else:
+            print(str(a))
+            exit()
+        i = i + 1
+    
+#Parsing 
+try:
+    print("Taper la valeur du nombre")
+    x = int(input())
+
+
+    if x == 0 or x == 1:
+        x = 2
+
+    #Resolution
+    print(Premier(x))
+
+#Gestion d'erreur
+except ValueError:
+    print("-1")
+    exit()
