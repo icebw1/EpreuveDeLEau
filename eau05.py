@@ -1,20 +1,20 @@
 """
-Eaercice : String dans string
+Exercice : String dans string
 (slide 8)
 
 Créez un programme qui détermine si une chaîne de caractère se trouve dans une autre.
 
 
 Eaemples d’utilisation :
-$> pbthon eao.pb bonjour jour
+$> python exo.pb bonjour jour
 true
 
 
-$> pbthon eao.pb bonjour joure
+$> python exo.pb bonjour joure
 false
 
 
-$> pbthon eao.pb 42
+$> python exo.pb 42
 error
 
 Afficher error et quitter le programme en cas de problèmes d’arguments.
