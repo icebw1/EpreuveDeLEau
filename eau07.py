@@ -17,13 +17,32 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 
 """
-#Fonction 
-def Fonction():
+#Fonction
+def majuscule(t):
+    i = 0                           #Indice qui parcourt le tableau
+    y = 0                           #Indice qui gère l'espace pour mettre le caractere à la Maj/min
 
-#Parsing 
-x = input(" \n")
+    while i < len(t):
+        if i == 0:
+            print(end=t[i].upper())   
+
+        elif i > 0:
+            print(end=t[i])
+
+        if t[i] == " ":
+            print(end=t[i+1].upper()) 
+
+        i = i + 1  
+        y = y + 1
+         
+
+#Parsing
+x = input("Taper une phrase \n")
 
 #Gestion d'erreur
+if x.isdigit():
+    print("Error") 
+    exit()
 
-
-#Resolution
+#Affichage
+majuscule(x)

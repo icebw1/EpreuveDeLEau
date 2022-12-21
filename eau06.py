@@ -17,7 +17,6 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 
 """
-
 #Fonction
 def majusculeSur2(t):
     i = 0                           #Indice qui parcourt le tableau
