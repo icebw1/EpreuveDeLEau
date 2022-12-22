@@ -37,11 +37,20 @@ def entreMinEtMax(a, b):
 x = input("\n")
 tableau = x.split(" ")
 
-nInt1 = int(tableau[0])
-nInt2 = int(tableau[1])
-
+nInt1 = tableau[0]
 #Gestion d'erreur
-if not x.isdigit():
+if nInt1.isdigit():
+    nInt1 = int(tableau[0])
+else:
+    print("error") 
+    exit()
+
+nInt2 = tableau[1]
+#Gestion d'erreur
+if nInt2.isdigit():
+    nInt2 = int(tableau[1])
+
+else:
     print("error") 
     exit()
 
