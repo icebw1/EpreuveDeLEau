@@ -1,34 +1,49 @@
 """
-Exercice : Chiffres only
-(slide 11)
+Exercice : Entre min et max
+(slide 12)
 
-Créez un programme qui détermine si une chaîne de caractères ne contient que des chiffres.
+Créez un programme qui affiche toutes les valeurs comprises entre deux nombres dans l’ordre croissant. Min inclus, max exclus.
 
 Exemples d’utilisation :
-$> python exo.py “4445353”
-true
+$> python exo.py 20 25
+20 21 22 23 24
 
 
-$> python exo.py 42
-true
+$> python exo.py 25 20
+20 21 22 23 24
 
-$> python exo.py “Bonjour 36”
-false
+$> python exo.py hello
+error
 
 Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 """
 #Fonction
-def queDesChiffres(t):
-    print("true") 
+def entreMinEtMax(a, b):
+    #i = 0
+    if a < b:
+        print(end=str(a) + " ")  
+        while a < b-1:
+            a = a + 1
+            print(end=str(a) + " ")  
+
+    elif a > b:
+        print(end=str(b) + " ")  
+        while a-1 > b:
+            b = b + 1
+            print(end=str(b) + " ")  
 
 #Parsing
 x = input("\n")
+tableau = x.split(" ")
+
+nInt1 = int(tableau[0])
+nInt2 = int(tableau[1])
 
 #Gestion d'erreur
 if not x.isdigit():
-    print("false") 
+    print("error") 
     exit()
 
 #Affichage
-queDesChiffres(x)
+entreMinEtMax(nInt1, nInt2)
