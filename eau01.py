@@ -12,12 +12,22 @@ $>
 
 """
 #Fonction
-def inverseChaine(t):
-    
-    i = len(t)-1  
-    while i >= 0:
-        print(end=tableau[i])
-        print(end=" ")
-        i = i - 1
+#Fonctions
+for i in range(00, 100):
+    for j in range(00, 100):
+        if i < 10 and j < 10:
+            print("0"+ str(i) + " " + "0" + str(j))
+            continue
 
+        elif i < 10 and j >= 10:
+            print("0"+ str(i) + " " + str(j))
+            continue
+
+        elif i >= 10 and j < 10:
+            print(str(i) + " " + "0" + str(j))
+            continue
+
+        if i == j:
+            continue
+        print(j, i)
 
