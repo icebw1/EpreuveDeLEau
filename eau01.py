@@ -12,7 +12,6 @@ $>
 
 """
 #Fonction
-#Fonctions
 for i in range(00, 100):
     for j in range(00, 100):
         if i < 10 and j < 10:
