@@ -38,7 +38,7 @@ def minAbsolu(t):
 
 try:
     #Parsing
-    x = input("\n")
+    x = input("Ce programme affiche la différence minimum absolue entre deux nombres parmi une liste de nombres entrés\n")
     tableau = x.split(" ")
 
     #Affichage
