@@ -17,42 +17,24 @@ $>
 
 000 n’est pas là parce que cette combinaison ne comporte pas exclusivement des chiffres différents les uns des autres.
 """
+#Fonction
 tableau = []
-"""
-#Fonctions
+
 for i in range(10):
     for j in range(1, 10):
-        if i == j:
+        if str(i) == str(j):
             continue
         for k in range(0, 10):
-            if j == k or i == k:
-                continue
-            elif i == 9 and j == 8 and k == 7:
-                print(i, j, k, end=".")
+            if str(j) == str(k) or str(i) == str(k):
                 continue
 
-            print(i, j, k, end=", ")
-"""         
-           
-
-#Fonctions
-for i in range(10):
-    for j in range(1, 10):
-        if i == j:
-            continue
-        for k in range(0, 10):
-            if j == k or i == k:
+            elif (str(i) + str(k) + str(j)) in tableau or (str(k) + str(i) + str(j)) in tableau or (str(k) + str(j) + str(i)) in tableau or (str(j) + str(i) + str(k)) in tableau or (str(j) + str(k) + str(i)) in tableau:
                 continue
 
-            if nombre = str(i) + str(k) + str(j) or nombre = str(j) + str(i) + str(k) or nombre = str(j) + str(k) + str(i) or nombre = str(k) + str(i) + str(j) or nombre = str(k) + str(j) + str(i):
-                continue
+            tableau.append(str(i) + str(j) + str(k))
 
-            elif i == 9 and j == 8 and k == 7:
-                print(i, j, k, end=".")
-                continue
-
-            print(i, j, k, end=", ")
-            #nombre = str(i) + str(j) + str(k)
-            #tableau.append(nombre)
-
-             #print(tableau)
+for n in tableau:
+    if str(n) == "789":
+        print(end=n + ".")
+        exit()
+    print(end=n + ", ")
