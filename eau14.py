@@ -15,7 +15,6 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 """
 #Fonction
-
 def triParOrdreASCII(t):
     i = 0
     j = 0   
@@ -44,5 +43,5 @@ try:
 
 #Gestion d'erreur
 except ValueError:
-    print("Erreur, la valeur entree est une chaine")
+    print("Erreur")
     exit()
