@@ -23,7 +23,7 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 #Fonction 
 def chaineDansChaine(tableau1, tableau2):
     a = 0 #Compteur chaine 1
-    b = 0 #Compteur chaine 1
+    b = 0 #Compteur chaine 2
     while b < len(tableau2):
         if tableau2[b] != tableau1[a] and a == len(tableau1)-1:
             print("false")

@@ -12,7 +12,6 @@ $>
 
 Note : [] est à remplacer par un adjectif de votre choix (facile ?)
 
-
 """
 
 print("\nJ’ai terminé l’Épreuve de l’Eau et c’était oklm")

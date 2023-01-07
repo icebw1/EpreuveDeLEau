@@ -30,9 +30,9 @@ Wikipedia vous présentera une belle description de cet algorithme de tri.
 
 def triABulles(t):
     i = 0
-    j = 0   
-    while i <= len(t)-j:     #Après le 1er parcous, le plus grand nb étant à sa position définitive (en dernier) : il n'a plus à être traité. 
-            if i == len(t)-1:
+    j = 1   
+    while i <= len(t)-j  and j != len(t)-1:     #Après le 1er parcous, le plus grand nb étant à sa position définitive (en dernier) : il n'a plus à être traité. 
+            if i == len(t)-j:
                 i = 0
                 j = j + 1
 

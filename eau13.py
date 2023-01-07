@@ -55,7 +55,7 @@ try:
     #Parsing
     x = input("Ce programme trie une liste de nombres (Tri par sélection).\n")
     tableau = x.split(" ")
-    int_tableau = list(map(int, tableau))
+    int_tableau = list(map(int, tableau))   #Convertir tous les éléments du tableau en int
 
     #Affichage
     triParSelection(int_tableau)
